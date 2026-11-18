@@ -1,5 +1,5 @@
 # 🎬 Vídeo Explicativo:
-> Link do vídeo: https://www.youtube.com/watch?v=uyKRUeW8RHw
+> Link do vídeo: https://www.youtube.com/watch?v=nm3M7lMzI3Q
 
 ---
 
