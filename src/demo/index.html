@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Sort vs Merge Sort | Simulador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Quick Sort vs Merge Sort</h1>
+    <p class="sub">Os algoritmos rodam em <b>Python</b> (<code>ordenacao.py</code>). Esta página só desenha os passos
+      recebidos.</p>
+    <div id="erro" class="erro" hidden></div>
+
+    <section class="card">
+      <div class="ctl">
+        <label>Algoritmo
+          <select id="algo">
+            <option value="quick">Quick Sort (pivô = último)</option>
+            <option value="merge">Merge Sort</option>
+          </select></label>
+        <label>Tamanho <input id="n" type="range" min="8" max="50" value="24"><b id="nv">24</b></label>
+        <label>Velocidade <input id="sp" type="range" min="1" max="10" value="6"></label>
+      </div>
+      <div class="ctl">
+        <button id="anterior">⏮ Anterior</button>
+        <button class="p" id="play">▶ Play</button>
+        <button id="passo">Passo ⏭</button>
+        <button id="reset">↺ Reset</button>
+        <button id="novo">🎲 Novo array</button>
+        <button class="w" id="pior">⚠ Cenário Pior Caso</button>
+      </div>
+      <div id="aviso" class="aviso" hidden></div>
+    </section>
+
+    <section class="card">
+      <div id="barras" class="barras"></div>
+      <div id="auxbox" hidden>
+        <div class="rot">Vetores auxiliares (cópias usadas na intercalação)</div>
+        <div id="esq" class="barras mini"></div>
+        <div id="dir" class="barras mini"></div>
+      </div>
+      <div class="leg">
+        <span><i class="c-faixa"></i>sub-array ativo</span><span><i class="c-pivo"></i>pivô</span>
+        <span><i class="c-cmp"></i>comparação</span><span><i class="c-troca"></i>troca / escrita</span>
+        <span><i class="c-ok"></i>posição final</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h3>Métricas</h3>
+        <div class="m">
+          <div><small>Comparações</small><b id="mc">0</b></div>
+          <div><small id="ml">Trocas</small><b id="mt">0</b></div>
+          <div><small>Passo</small><b id="mp">0 / 0</b></div>
+          <div><small>Profundidade da recursão</small><b id="md">–</b></div>
+          <div><small>Teórico n²/2 (pior Quick)</small><b id="m2">–</b></div>
+          <div><small>Teórico n·log₂n</small><b id="mn">–</b></div>
+        </div>
+      </section>
+      <section class="card">
+        <h3>Log didático</h3>
+        <div id="log"></div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
