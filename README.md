@@ -1,5 +1,5 @@
 # 🎬 Vídeo Explicativo:
-> Link do vídeo: https://www.youtube.com/watch?v=jyvzLiOvFIM
+> Link do vídeo: https://www.youtube.com/watch?v=uyKRUeW8RHw
 
 ---
 
@@ -63,6 +63,9 @@ python algoritmo.py       # testa só os algoritmos no terminal (3 cenários)
 - **Merge Sort:** a divisão é sempre ao meio, independente dos dados. A altura da recursão é log₂n e cada nível intercala n elementos, então o custo é O(n log n) em qualquer entrada. Com n=30 no mesmo cenário, ele faz 77 comparações.
 
 ---
+
+### Conclusão
+- Na maior parte dos casos o Quick Sort será mais pesado que o Merge Sort caso o pivô seja fixo, quando um bom pivô é escolhido (por meio de outras algoritmos por exemplo) o Quick Sort supera em muita das vezes o Merge Sort.
 
 ## 3. Diário de Engenharia com IA
 
