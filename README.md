@@ -70,7 +70,7 @@ python algoritmo.py       # testa só os algoritmos no terminal (3 cenários)
 
 **Claude (Anthropic), modelo Claude Sonnet 5.5**, pela interface de chat claude.ai, com geração de arquivos e execução de código para testar o projeto.
 
-### Os 3 principais prompts
+### Os principais prompts
 
 **Prompts principais**
 > "Preciso de um Simulador Visual Interativo em html, css e js, o projeto é sobre os algoritmos de Quick Sort e Merge Sort que serão feitos em python, é necessário permitir alternar entre Merge Sort e Quick Sort, destacando visualmente o pivô/sub-arrays, trocas (swaps) e número de comparações, incluir botão de 'Cenário Pior Caso', painel de métricas e logs didáticos; controles Step-by-step, Play, Reset."
